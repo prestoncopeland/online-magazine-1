@@ -1,9 +1,13 @@
 <%# navigation styled for Zurb Foundation 5 %>
 
         <nav class="top-bar" data-topbar>
-        <ul class="title-area">
+
+         <ul class="title-area">
             <li class="name"><%= link_to 'Home', root_path %></li>
-          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <ul class="title-area">
+            <%= render 'layouts/sign_in_links' %>
         </ul>
 
         <section class="top-bar-section">
@@ -12,4 +16,5 @@
             <%= render 'layouts/navigation_links' %>
           </ul>
         </section>
+
       </nav>
