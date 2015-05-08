@@ -8,7 +8,7 @@ feature 'Home page' do
   #   Given I am a visitor
   #   When I visit the home page
   #   Then I see "Initials Magazine" and "Initials" in the top navigation bar
-  scenario 'visit the home page' do
+  scenario 'visit the Initials home page' do
     visit root_path
     within '.top-bar' do
       expect(page).to have_css('a', text: 'Initials')
